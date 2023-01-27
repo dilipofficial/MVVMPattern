@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1A08433290AF231002377E7 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A08432290AF231002377E7 /* NoteViewController.swift */; };
+		C1A9271E290C085B00D68F2F /* UtilityFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9271D290C085B00D68F2F /* UtilityFunction.swift */; };
 		C1B7148E28F7D5360009F545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7148D28F7D5360009F545 /* AppDelegate.swift */; };
 		C1B7149028F7D5360009F545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7148F28F7D5360009F545 /* SceneDelegate.swift */; };
 		C1B7149228F7D5360009F545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B7149128F7D5360009F545 /* ViewController.swift */; };
 		C1B7149528F7D5360009F545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B7149328F7D5360009F545 /* Main.storyboard */; };
 		C1B7149728F7D5380009F545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B7149628F7D5380009F545 /* Assets.xcassets */; };
 		C1B7149A28F7D5380009F545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B7149828F7D5380009F545 /* LaunchScreen.storyboard */; };
+		C1B714AE28F835050009F545 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B714AD28F835050009F545 /* AuthService.swift */; };
+		C1B714B028F846B20009F545 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B714AF28F846B20009F545 /* Credentials.swift */; };
+		C1B714B228F84A7F0009F545 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B714B128F84A7F0009F545 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1A08432290AF231002377E7 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		C1A9271D290C085B00D68F2F /* UtilityFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunction.swift; sourceTree = "<group>"; };
 		C1B7148A28F7D5360009F545 /* MVVMPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B7148D28F7D5360009F545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B7148F28F7D5360009F545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,10 @@
 		C1B7149628F7D5380009F545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B7149928F7D5380009F545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B7149B28F7D5380009F545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1B714AC28F7F4490009F545 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C1B714AD28F835050009F545 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C1B714AF28F846B20009F545 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		C1B714B128F84A7F0009F545 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,7 @@
 		C1B7148128F7D5360009F545 = {
 			isa = PBXGroup;
 			children = (
+				C1B714AC28F7F4490009F545 /* Config.xcconfig */,
 				C1B7148C28F7D5360009F545 /* MVVMPattern */,
 				C1B7148B28F7D5360009F545 /* Products */,
 			);
@@ -56,15 +68,108 @@
 		C1B7148C28F7D5360009F545 /* MVVMPattern */ = {
 			isa = PBXGroup;
 			children = (
+				C1B714A828F7DC9B0009F545 /* API Manager */,
+				C1B714A528F7D6CE0009F545 /* Core */,
+				C1B714AA28F7DE2A0009F545 /* Utills */,
+				C1B714A628F7D8FB0009F545 /* Controller */,
+				C1B714A328F7D6430009F545 /* ViewModel */,
+				C1B714A228F7D6390009F545 /* View */,
+				C1B714A128F7D62C0009F545 /* Model */,
 				C1B7148D28F7D5360009F545 /* AppDelegate.swift */,
 				C1B7148F28F7D5360009F545 /* SceneDelegate.swift */,
-				C1B7149128F7D5360009F545 /* ViewController.swift */,
-				C1B7149328F7D5360009F545 /* Main.storyboard */,
 				C1B7149628F7D5380009F545 /* Assets.xcassets */,
 				C1B7149828F7D5380009F545 /* LaunchScreen.storyboard */,
 				C1B7149B28F7D5380009F545 /* Info.plist */,
 			);
 			path = MVVMPattern;
+			sourceTree = "<group>";
+		};
+		C1B714A128F7D62C0009F545 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1B714AF28F846B20009F545 /* Credentials.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C1B714A228F7D6390009F545 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1B7149328F7D5360009F545 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1B714A328F7D6430009F545 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C1B714B128F84A7F0009F545 /* LoginViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1B714A428F7D6500009F545 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C1B714A528F7D6CE0009F545 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C1B714A628F7D8FB0009F545 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1B7149128F7D5360009F545 /* ViewController.swift */,
+				C1A08432290AF231002377E7 /* NoteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1B714A728F7D9110009F545 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				C1A9271D290C085B00D68F2F /* UtilityFunction.swift */,
+			);
+			name = Extention;
+			sourceTree = "<group>";
+		};
+		C1B714A828F7DC9B0009F545 /* API Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C1B714A928F7DE030009F545 /* Auth Service */,
+				C1B714A428F7D6500009F545 /* Service */,
+			);
+			path = "API Manager";
+			sourceTree = "<group>";
+		};
+		C1B714A928F7DE030009F545 /* Auth Service */ = {
+			isa = PBXGroup;
+			children = (
+				C1B714AD28F835050009F545 /* AuthService.swift */,
+			);
+			name = "Auth Service";
+			sourceTree = "<group>";
+		};
+		C1B714AA28F7DE2A0009F545 /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				C1B714AB28F7DE4B0009F545 /* Validation */,
+				C1B714A728F7D9110009F545 /* Extention */,
+			);
+			name = Utills;
+			sourceTree = "<group>";
+		};
+		C1B714AB28F7DE4B0009F545 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A08433290AF231002377E7 /* NoteViewController.swift in Sources */,
+				C1B714AE28F835050009F545 /* AuthService.swift in Sources */,
+				C1A9271E290C085B00D68F2F /* UtilityFunction.swift in Sources */,
 				C1B7149228F7D5360009F545 /* ViewController.swift in Sources */,
+				C1B714B228F84A7F0009F545 /* LoginViewModel.swift in Sources */,
+				C1B714B028F846B20009F545 /* Credentials.swift in Sources */,
 				C1B7148E28F7D5360009F545 /* AppDelegate.swift in Sources */,
 				C1B7149028F7D5360009F545 /* SceneDelegate.swift in Sources */,
 			);
@@ -168,6 +278,7 @@
 /* Begin XCBuildConfiguration section */
 		C1B7149C28F7D5380009F545 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B714AC28F7F4490009F545 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -229,6 +340,7 @@
 		};
 		C1B7149D28F7D5380009F545 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1B714AC28F7F4490009F545 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
